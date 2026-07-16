@@ -110,8 +110,8 @@ console.log("--------------------------------------------------------------");
 12>78=78; 78>25=78; 78>45=78 */
 
 let big = [12, 78, 25, 45];
-let bigget = big.reduce((a, b) => a > b ? a : b, 0);
-console.log(bigget);
+let biggest = big.reduce((a, b) => a > b ? a : b, 0);
+console.log(biggest);
 
 console.log("--------------------------------------------------------------");
 
@@ -127,3 +127,57 @@ let fname = name.reduce((arr, val, index) => {
     return arr;
 }, {});
 console.log(fname);
+/*
+{0: 'Geetha', 1: 'Virat', 2: 'Nuikhil', 3: 'Sammu'} */
+
+console.log("--------------------------------------------------------------");
+/*Every function */
+let d = [56, 85, 45, 66];
+let everyd = d.every(s => s > 50);
+console.log(everyd); //false 
+
+/*every() checks if all elements in the array satisfy the condition s > 50.
+
+Your array is [56, 85, 45, 66].
+
+56 > 50 → true
+
+85 > 50 → true
+
+45 > 50 → false ❌
+
+Since one element (45) fails the test, every() immediately returns false.
+✅ Key takeaway:
+
+every() → returns true only if all elements pass the condition.
+
+If even one fails, the result is false.
+
+Would you like me to also show you how some() would behave on the same array? It’s the opposite in spirit—it checks if at least one element passes the condition. */
+
+console.log("--------------------------------------------------------------");
+/*every function ex2 */
+
+let arrShow = [200, 204, 201, 205];
+let res5 = arrShow.every(d => d >= 200);
+console.log(res5); //true
+
+console.log("--------------------------------------------------------------");
+/*some function - atleast 1 must pass 
+
+Why?
+some() checks if at least one element in the array satisfies the condition m > 200.
+Your array is [200, 204, 201, 205].
+200 > 200 → false
+204 > 200 → true ✅ → stops here
+Since one element (204) passes the test, some() immediately returns true. */
+
+let valu = [200, 204, 201, 205].some(m => m > 200);
+console.log(valu);//true
+
+console.log("--------------------------------------------------------------");
+
+/*Key takeaway:
+
+every() → all elements must pass.
+some() → at least one element must pass.*/

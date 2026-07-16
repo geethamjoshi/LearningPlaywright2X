@@ -19,12 +19,15 @@ console.log(score); //Empty Array of size3
 console.log(score2); //o/p [1 2 3]
 
 //or
-let fruits = new Array("apple", "banana"), "cherry");
+//let fruits = new Array("apple", "banana", "cherry");
 
 //or
 let num = Array.of(10, 20, 30);
+console.log(num);
 
 //or
 let chars = Array.from("hello");
+console.log(chars);
 // this will convert hello to characters["h","e","l","l","o","w"]
+/*Array.from("hello") takes the string and converts it into an array, where each character becomes an element. */
 

@@ -56,3 +56,8 @@ console.log(arr);
 //from index 1 2 ele will be replaced.
 //(7) [1, 2, 3, 4, 5, 6, 7]
 //(7) [1, 8, 9, 4, 5, 6, 7]
+
+
+//So, if rar is a nested array, .flat() will simplify it. If it’s already flat, the output will be the same as the input.
+let rar = [[1, 2], [4, 6], [8, 6]];
+console.log(rar.flat()); //o/p : (6) [1, 2, 4, 6, 8, 6]

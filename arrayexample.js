@@ -15,7 +15,7 @@ let res = ["chrome", "firefox", "safari", "opera", "edge"];
 console.log(res.indexOf("firefox"));//1
 console.log(res.indexOf("fail")); //-1 as this is not present
 
-console.log(res.lastIndexOf("edge"));//3
+console.log(res.lastIndexOf("edge"));//4
 
 console.log(res.includes("opera"))//true if present. true or false will be o/p
 
