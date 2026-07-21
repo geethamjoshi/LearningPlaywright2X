@@ -34,3 +34,16 @@ console.log(resSum);
 
 const printit = name => console.log(name);
 printit("Sameeksha");
+
+console.log("****************************************************************");
+/*if function takes 0 parameters */
+const val = () => "Hi";
+console.log(val());
+
+console.log("****************************************************************");
+
+const validateStatus = status => {
+    if (status >= 200 && status <= 300)
+        console.log("Request is fine");
+}
+validateStatus(201);
